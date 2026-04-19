@@ -1,6 +1,6 @@
 const express   = require("express");
 const mongoose  = require("mongoose");
-const cors      = require("cors");
+const cors = require("cors");
 require("dotenv").config();
 
 const designRoutes = require("./routes/designs");
@@ -9,7 +9,8 @@ const app  = express();
 const PORT = process.env.PORT || 5002;
 
 // ── Middleware ────────────────────────────────────────────────────────────────
-app.use(cors({ origin: "http://localhost:3000" })); // allow React dev server
+app.use(cors())
+; // allow React dev server
 app.use(express.json());                            // parse JSON request bodies
 
 // ── Routes ────────────────────────────────────────────────────────────────────
