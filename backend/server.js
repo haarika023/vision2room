@@ -6,7 +6,7 @@ require("dotenv").config();
 const designRoutes = require("./routes/designs");
 
 const app  = express();
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5002;
 
 // ── Middleware ────────────────────────────────────────────────────────────────
 app.use(cors({ origin: "http://localhost:3000" })); // allow React dev server

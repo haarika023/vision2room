@@ -5,7 +5,7 @@ import { useState, useRef, useCallback, useEffect } from "react";
 // ─────────────────────────────────────────────────────────────────────────────
 const SCALE      = 20;   // 1 foot = 20px
 const CANVAS_PAD = 32;
-const API        = "/api/designs"; // proxied to http://localhost:5001
+const API        = "/api/designs"; // proxied to http://localhost:5002
 
 const FURNITURE_CATALOG = [
   { id: "bed",       label: "Bed",      icon: "🛏",  w: 80,  h: 60,  color: "#BFDBFE", stroke: "#1D4ED8" },
@@ -157,7 +157,7 @@ export default function App() {
   }
 
   // ── Fetch all saved designs from MongoDB on mount ──────────────────────────
- uuseEffect(() => {
+ useEffect(() => {
   fetchDesigns();
 }, []);
 

@@ -53,7 +53,7 @@ mongosh --eval "db.runCommand({ connectionStatus: 1 })"
 cd backend
 npm install
 npm run dev
-# Server runs at http://localhost:5001
+# Server runs at http://localhost:5002
 ```
 
 ### Step 3 — Start the frontend (new terminal tab)
