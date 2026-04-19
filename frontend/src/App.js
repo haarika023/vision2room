@@ -157,9 +157,9 @@ export default function App() {
   }
 
   // ── Fetch all saved designs from MongoDB on mount ──────────────────────────
-  useEffect(() => {
-    fetchDesigns();
-  }, []);
+ useEffect(() => {
+  fetchDesigns();
+}, [fetchDesigns]);
 
   async function fetchDesigns() {
     setDbLoading(true);
